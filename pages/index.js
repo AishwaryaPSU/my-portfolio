@@ -1,63 +1,59 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import utilStyles from '../styles/utils.module.css';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>AishwaryaGM</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
+      <Image
+              priority
+              src="/images/pro.jpg"
+              className={utilStyles.borderCircle}
+              height={144}
+              width={144}
+          />
+        <h2 className="title">
+          Aishwarya Govindappa Mahadev
+        </h2>
+          <p className="intro">
+            Hello there, you can call me Agm for short. I'm a software engineer and a former track and field athlete.
+            I am fond of travelling, trying new food, exercising and listening to philosophical talks. Gratitude is the manthra I live by.
+            I am grateful for everything I have and have been through, as I beleive experiences give us the best chance to shape ourselves.
+          </p>
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/posts/work-experience" className="card">
+            <h3>Work Experience &rarr;</h3>
+            <p>Me in the professional world.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="/posts/education" className="card">
+            <h3>Education &rarr;</h3>
+            <p>Got a couple of degrees. 😎</p>
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="/posts/social-media" className="card">
+            <h3>Social Media &rarr;</h3>
+            <p>My online activities.</p>
+          </a>
+
+          <a
+            href="/posts/contact"
             className="card"
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>Contact &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              You can reach me at.
             </p>
           </a>
         </div>
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
-      </footer>
 
       <style jsx>{`
         .container {
@@ -178,6 +174,13 @@ export default function Home() {
           line-height: 1.5;
         }
 
+        .intro p {
+          margin: 2rem;
+          padding: 2rem;
+          color: inherit;
+          margin: 1rem;
+        }
+
         .logo {
           height: 1em;
         }
@@ -203,6 +206,7 @@ export default function Home() {
         * {
           box-sizing: border-box;
         }
+
       `}</style>
     </div>
   )
