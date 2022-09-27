@@ -1,9 +1,5 @@
 import React from "react";
 import Collapsible from "../../components/collapsible";
-import Image from 'next/image';
-import utilStyles from '../../styles/utils.module.css';
-import Link from 'next/Link';
-import styles from '../../components/layout.module.css';
 import Layout from "../../components/layout";
 
 function Education() {
