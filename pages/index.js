@@ -34,7 +34,7 @@ export default function Home() {
 
           <a href="/posts/education" className="card">
             <h3>Education &rarr;</h3>
-            <p>Got a couple of degrees. 😎</p>
+            <p>Got a chance to goto uni.😎</p>
           </a>
 
           <a
@@ -44,13 +44,9 @@ export default function Home() {
           </a>
 
           <a
-            href="/posts/contact"
-            className="card"
-          >
-            <h3>Contact &rarr;</h3>
-            <p>
-              You can reach me at.
-            </p>
+              href="/posts/certifications" className="card">
+              <h3>Certifications &rarr;</h3>
+              <p>Working to upskill myself.</p>
           </a>
         </div>
       </main>
